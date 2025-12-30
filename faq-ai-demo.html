@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FAQ AI Demo</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<h2>AI FAQ Assistant</h2>
+
+<select onchange="answer(this.value)">
+<option>Select a question</option>
+<option value="hours">Working hours?</option>
+<option value="support">Do you give support?</option>
+<option value="pay">Payment model?</option>
+</select>
+
+<p id="out"></p>
+
+<script>
+function answer(q){
+ let a="";
+ if(q=="hours") a="We work flexible hours for clients.";
+ if(q=="support") a="Yes, continuous support is provided.";
+ if(q=="pay") a="Use first, pay after satisfaction.";
+ document.getElementById("out").innerText=a;
+}
+</script>
+</body>
+</html>

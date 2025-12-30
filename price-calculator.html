@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Price Calculator</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<h2>Transparent Price Calculator</h2>
+
+<select id="type">
+<option value="2000">Website</option>
+<option value="3000">Chatbot</option>
+<option value="5000">Website + Chatbot</option>
+</select>
+
+<button onclick="calc()">Calculate</button>
+<p id="out"></p>
+
+<script>
+function calc(){
+ let p=document.getElementById("type").value;
+ document.getElementById("out").innerText=
+ "Estimated Cost: ₹"+p+" (Use first, pay later)";
+}
+</script>
+</body>
+</html>

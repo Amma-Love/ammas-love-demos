@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lead Bot</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<h2>Lead Qualification Bot</h2>
+
+<input id="name" placeholder="Your name">
+<select id="need">
+<option>Website</option>
+<option>Chatbot</option>
+<option>Automation</option>
+</select>
+<button onclick="qualify()">Submit</button>
+
+<p id="result"></p>
+
+<script>
+function qualify(){
+ let n=document.getElementById("name").value;
+ let s=document.getElementById("need").value;
+ document.getElementById("result").innerText =
+ "Thanks "+n+", we’ll prepare a solution for "+s+".";
+}
+</script>
+</body>
+</html>

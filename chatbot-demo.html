@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chatbot Demo</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<h2>Rule-Based Business Chatbot</h2>
+
+<div id="chat"></div>
+<input id="q" placeholder="Ask about services">
+<button onclick="reply()">Send</button>
+
+<script>
+function reply(){
+  let q=document.getElementById("q").value.toLowerCase();
+  let r="Please contact us.";
+  if(q.includes("website")) r="We build websites.";
+  if(q.includes("price")) r="Transparent pricing.";
+  if(q.includes("chatbot")) r="Yes, AI chatbots available.";
+  document.getElementById("chat").innerHTML+="<p>"+r+"</p>";
+}
+</script>
+</body>
+</html>

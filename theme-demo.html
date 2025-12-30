@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Theme Demo</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body id="b">
+<h2>Theme Switch Demo</h2>
+<button onclick="toggle()">Toggle Theme</button>
+
+<script>
+function toggle(){
+ let b=document.getElementById("b");
+ b.style.background = b.style.background=="white"?"#111":"white";
+ b.style.color = b.style.color=="black"?"#eee":"black";
+}
+</script>
+</body>
+</html>

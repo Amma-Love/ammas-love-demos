@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Landing Generator</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<h2>Instant Landing Page Generator</h2>
+
+<input id="biz" placeholder="Business Name">
+<button onclick="gen()">Generate</button>
+
+<div id="page"></div>
+
+<script>
+function gen(){
+ let b=document.getElementById("biz").value;
+ document.getElementById("page").innerHTML=
+ `<h3>${b}</h3><p>We help ${b} grow using AI.</p>`;
+}
+</script>
+</body>
+</html>

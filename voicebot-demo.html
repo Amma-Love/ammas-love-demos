@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Voice Chatbot</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<h2>Voice Chatbot Demo</h2>
+<button onclick="listen()">🎤 Speak</button>
+
+<script>
+function listen(){
+ let r=new(window.SpeechRecognition||webkitSpeechRecognition)();
+ r.onresult=e=>{
+   let t=e.results[0][0].transcript;
+   alert("You said: "+t);
+   speak("Thank you. We will help you.");
+ };
+ r.start();
+}
+</script>
+<script src="../script.js"></script>
+</body>
+</html>
