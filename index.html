@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Amma’s-Love | Demo Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+  <aside class="sidebar">
+    <h2>Amma’s-Love</h2>
+   <button onclick="loadDemo('website')">🌐 Website</button>
+   <button onclick="loadDemo('chatbot')">🤖 Chatbot</button>
+   <button onclick="loadDemo('voice')">🎤 Voice Bot</button>
+   <button onclick="loadDemo('calculator')">🧮 Pricing</button>
+   <button onclick="loadDemo('faq')">🧠 FAQ AI</button>
+   <button onclick="loadDemo('leadbot')">📞 Lead Bot</button>
+   <button onclick="loadDemo('landing')">⚡ Landing Gen</button>
+   <button onclick="loadDemo('dashboard')">📊 Client Panel</button>
+   <button onclick="loadDemo('analytics')">📈 Analytics</button>
+   <button onclick="loadDemo('automation')">⚙️ Automation</button>
+  </aside>
+
+  <main class="content">
+    <iframe id="frame" src="demos/website.html"></iframe>
+  </main>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
